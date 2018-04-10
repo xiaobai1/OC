@@ -18,14 +18,13 @@ Pod::Spec.new do |s|
   s.name         = "GithubTest"
   s.version      = "0.0.1"
   s.summary      = "oc log GithubTest"
+  s.description  = "oc log GithubTest"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
 
   s.homepage     = "https://github.com/xiaobai1/OC.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -39,7 +38,7 @@ Pod::Spec.new do |s|
   #
 
     #s.license      = "MIT (example)"
-   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -62,8 +61,6 @@ Pod::Spec.new do |s|
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
-
-   s.platform     = :ios
    s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
@@ -79,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xiaobai1/OC.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/xiaobai1/OC.git", :tag => "#{0.0.1}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +87,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "GithubTest", "GithubTest/**/*.{h,m}"
-#s.exclude_files = "Classes/Exclude"
+  s.source_files  = "GithubTest/**/*.{h,m}"
+    #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
